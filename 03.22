@@ -40,6 +40,14 @@ xampp 설치 - htdoc에 저장
 		$result = $n * 2;
 		return $result;
 	}
+	function price( $unitprice, $quantity){
+		$shippingfee = 2500;
+		$delevertfee = $unitprice * $quotemeta;
+		if ($delevertfee < 10000) {
+			$delevertfee += $shippingfee;
+	}
+	return $delevertfee;
+}
 	?>
 <h1>
 	<?php echo $year1; ?>
