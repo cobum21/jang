@@ -1,0 +1,53 @@
+xampp 설치 - htdoc에 저장 
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>올림픽 개최 연도</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css"
+</head>
+<body>
+	<?php
+	$year1 = "2000년 김민성";
+	$year2 = "2018년 고3 김민성";
+	$who = "트와이스";
+	$age = 19;
+	print $who."님".$age."세";
+	$msg = "안녕";
+	$colors = array("red","blue","green");
+	$point = 45;
+	$now = new DateTime();
+	$isPass = ($point>80);
+	$userName;
+	$a = 0;
+	$b = ++$a;
+	echo "\$a는 {$a}, \$b는$b}";
+	var_dump($msg);
+	var_dump($colors);
+	var_dump($now);
+	var_dump($point);
+	print_r($isPass);
+	var_dump($userName);
+	function double($n) {
+		$result = $n * 2;
+		return $result;
+	}
+	?>
+<h1>
+	<?php echo $year1; ?>
+</h1>
+입니다.<br>
+다음 평창 올림픽은
+<h1>
+	<?php echo $year2; ?>
+</h1>
+</body>
+</html>
